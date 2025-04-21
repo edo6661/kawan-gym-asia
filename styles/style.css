@@ -1,5 +1,29 @@
 :root {
 }
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+/* header */
+header {
+  padding: 16px 20px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.nav-logo-container {
+}
+nav > ul {
+  display: flex;
+  gap: 16px;
+}
+nav > ul > li {
+}
+nav > ul > li > a {
+}
 /* hero */
 .section-hero {
   color: white;
@@ -96,6 +120,9 @@
 
 .section-category {
   padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .category-content {
   display: grid;
@@ -127,6 +154,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 20px;
+  gap: 20px;
+}
+.left-projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .right-projects-content {
   display: flex;
@@ -151,9 +184,14 @@
 
 /* partner */
 
-.section-partner {
+.section-client {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-inline: 20px;
+  text-align: center;
 }
-.section-partners-content {
+.section-client-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -175,7 +213,26 @@
   padding-inline: 20px;
   gap: 16px;
 }
-
+/* brands */
+.section-brand {
+  padding-inline: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-brand-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 16px;
+  img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 /* footer */
 footer {
   display: grid;
