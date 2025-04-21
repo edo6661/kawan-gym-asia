@@ -59,17 +59,17 @@ function loadProductsByCategory(category) {
   const productData = {
     STRENGTH: [
       {
-        image: "./assets/images/multi-gym-1.jpg",
+        image: "./assets/images/category.jpg",
         name: "MULTI GYM 1 SISI",
         price: "Rp 8.500.000",
       },
       {
-        image: "./assets/images/multi-gym-2.jpg",
+        image: "./assets/images/category.jpg",
         name: "MULTI GYM 2 SISI",
         price: "Rp 16.900.000",
       },
       {
-        image: "./assets/images/superlative.jpg",
+        image: "./assets/images/category.jpg",
         name: "SUPERLATIVE SUPER RACK",
         price: "Rp 15.900.000",
       },
@@ -179,8 +179,43 @@ function loadProductsByCategory(category) {
     `;
 
     productGrid.appendChild(productCard);
+    productCard.addEventListener("click", () => {
+      showModal(product);
+    });
   });
 }
+function showModal(product) {
+  const modal = document.getElementById("modalOverlay");
+  const modalImage = document.getElementById("modalImage");
+  const modalName = document.getElementById("modalName");
+  const modalPrice = document.getElementById("modalPrice");
+
+  modalImage.src = product.image;
+  modalName.textContent = product.name;
+  modalPrice.textContent = product.price;
+
+  modal.style.display = "flex";
+
+  requestAnimationFrame(() => {
+    modal.classList.add("show");
+  });
+}
+
+function hideModal() {
+  const modal = document.getElementById("modalOverlay");
+  modal.classList.remove("show");
+
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 300);
+}
+
+document.getElementById("modalClose").addEventListener("click", hideModal);
+document.getElementById("modalOverlay").addEventListener("click", (e) => {
+  if (e.target.id === "modalOverlay") {
+    hideModal();
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   if (window.location.pathname.includes("specific-category.html")) {
