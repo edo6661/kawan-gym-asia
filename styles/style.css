@@ -1,0 +1,196 @@
+:root {
+}
+/* hero */
+.section-hero {
+  color: white;
+  position: relative;
+  min-height: 732px;
+}
+.section-hero,
+.section-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-hero-content {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 96px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+}
+.slider-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 200%; /* karena ada 2 gambar */
+  height: 100%;
+  animation: slide 8s infinite;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%,
+  45% {
+    transform: translateX(0);
+  }
+  50%,
+  95% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* about us */
+
+.section-about-us {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+}
+.about-us-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 16px;
+}
+.about-us-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.about-us-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  button {
+    border: 1px black solid;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+}
+
+.section-category {
+  padding-inline: 20px;
+}
+.category-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+.category-item {
+  position: relative;
+  img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+/* projects */
+
+.section-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 20px;
+}
+.right-projects-content {
+  display: flex;
+  overflow-x: auto;
+  div {
+    min-width: 224px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    margin-right: 16px;
+  }
+  img {
+    width: 224px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+/* partner */
+
+.section-partner {
+}
+.section-partners-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 16px;
+  img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* contact us */
+.section-contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20px;
+  gap: 16px;
+}
+
+/* footer */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: justify-between;
+  gap: 16px;
+  padding-inline: 20px;
+}
+.left-footer-content {
+}
+.item-left-footer {
+}
+.right-footer-content {
+}
+.footer-sosmed-1 {
+}
+.footer-sosmed-2 {
+}
