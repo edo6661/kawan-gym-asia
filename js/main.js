@@ -47,7 +47,6 @@ function loadSpecificCategory() {
       });
     });
 
-    // Tambahkan class active ke link yang sesuai dengan selectedCategory
     categoryLinks.forEach((link) => {
       if (link.textContent === selectedCategory) {
         link.classList.add("active-category");
@@ -72,7 +71,7 @@ function loadProductsByCategory(category) {
       {
         image: "./assets/images/superlative.jpg",
         name: "SUPERLATIVE SUPER RACK",
-        price: "Rp 15.900.000 - Rp 35.900.000",
+        price: "Rp 15.900.000",
       },
       {
         image: "./assets/images/category.jpg",
