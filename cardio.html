@@ -69,6 +69,7 @@
       media="print"
       onload="this.media='all'"
     />
+    <script type="module" src="js/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -76,12 +77,17 @@
         <div class="nav-logo-container">
           <img alt="Logo" src="./assets/images/logo.png" />
         </div>
-        <ul>
-          <li><a href="#"> ABOUT US </a></li>
-          <li><a href="#"> CATEGORY </a></li>
-          <li><a href="#"> SERVICE </a></li>
-          <li><a href="#"> client </a></li>
-          <li><a href="#"> CONTACT </a></li>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-menu">
+          <li><a href="#about"> ABOUT US </a></li>
+          <li><a href="#category"> CATEGORY </a></li>
+          <li><a href="#projects"> PROJECTS </a></li>
+          <li><a href="#client"> CLIENT </a></li>
+          <li><a href="#contact"> CONTACT </a></li>
         </ul>
       </nav>
     </header>
@@ -92,53 +98,51 @@
       <div class="left-footer-content">
         <div class="item-left-footer">
           <h4>About</h4>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
+          <div>
+            <a href="#"> About Precor </a>
+            <a href="#"> Careers </a>
+            <a href="#"> Patents </a>
+            <a href="#"> Sustainability </a>
+          </div>
         </div>
         <div class="item-left-footer">
-          <h4>About</h4>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
+          <h4>Visit Us</h4>
+          <div>
+            <a href="#"> international Offices </a>
+            <a href="#"> Precor For Home </a>
+            <a href="#"> Press </a>
+          </div>
         </div>
         <div class="item-left-footer">
-          <h4>About</h4>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
-          <a href="#"> test </a>
+          <h4>Support</h4>
+          <div>
+            <a href="#"> Contact Support </a>
+            <a href="#"> Contact Sales</a>
+            <a href="#"> Precor FAQ</a>
+            <a href="#"> Product Manuals</a>
+            <a href="#"> Recall Information</a>
+          </div>
         </div>
       </div>
       <div class="right-footer-content">
-        <h4>
-          lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        </h4>
+        <h4>SIGN UP TO RECEIVE THE LATEST COMMERCIAL FITNESS UPDATES</h4>
         <form
           action="https://formsubmit.co/muhammadridho5654@gmail.com"
           method="POST"
         >
-          <input type="text" placeholder="Your Email" />
+          <input type="email" placeholder="Your Email" name="Email" />
           <button>Submit</button>
         </form>
         <p>For more information, please contact us at</p>
         <div class="footer-sosmed-1">
-          <div>
-            <i class="fa-brands fa-facebook"></i>
-            <span> ********** </span>
-          </div>
-          <div>
-            <i class="fa-brands fa-instagram"></i>
-            <span> test </span>
-          </div>
+          <div><i class="fa-solid fa-phone"></i> <span> ********** </span></div>
+          <div><i class="fa-solid fa-question"></i> <span> test </span></div>
         </div>
         <div class="footer-sosmed-2">
           <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
         </div>
       </div>
     </footer>
