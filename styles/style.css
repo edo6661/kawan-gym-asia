@@ -5,6 +5,52 @@
   --color-gray: #808080;
 }
 body {
+  position: relative;
+}
+
+.pop-up-whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.pop-up-whatsapp-container > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pop-up-whatsapp-container > a > img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  transform: scale(0.9);
+}
+
+.whatsapp-text {
+  background-color: #25d366;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.pop-up-whatsapp-container:hover > a > img {
+  transform: scale(1.1);
+}
+
+.pop-up-whatsapp-container:hover .whatsapp-text {
+  opacity: 1;
+  transform: translateX(0);
 }
 main {
   display: flex;
@@ -186,7 +232,8 @@ nav > ul > li > a:hover {
 .section-category > h3,
 .section-projects > h3,
 .section-client > h3,
-.section-brand > h3 {
+.section-brand > h3,
+.section-projects > h3 {
   font-size: 32px;
   text-align: center;
 }
@@ -252,11 +299,14 @@ nav > ul > li > a:hover {
 
 .category-item {
   position: relative;
+  cursor: pointer;
   img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     border-radius: 12px;
+    scale: 0.9;
+    transition: scale 0.3s;
   }
   p {
     position: absolute;
@@ -267,19 +317,34 @@ nav > ul > li > a:hover {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    transition: color 0.3s;
   }
+}
+.category-item:hover > p {
+  color: var(--color-blue);
+}
+.category-item:hover > img {
+  scale: 1;
 }
 
 /* projects */
 
 .section-projects {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.section-projects > h2 {
+  text-align: center;
+}
+.container-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 20px;
   gap: 20px;
 }
 @media (max-width: 640px) {
-  .section-projects {
+  .container-projects {
     grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -396,7 +461,14 @@ nav > ul > li > a:hover {
     width: 300px;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(1);
+    opacity: 0.5;
+    transition: filter 0.3s, opacity 0.3s;
   }
+}
+.section-brand-content > img:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }
 /* footer */
 footer {
@@ -539,11 +611,17 @@ form > button {
   gap: 16px;
 }
 .product-card > img {
+  aspect-ratio: 1 / 1;
   width: 100%;
+  object-fit: cover;
   height: auto;
   border-radius: 8px;
 }
-
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 @media (max-width: 640px) {
   .product-section {
     flex-direction: column;
@@ -577,20 +655,36 @@ form > button {
 .modal-overlay.show {
   display: flex;
   animation: fadeIn 0.3s forwards;
+  margin-bottom: 32px;
 }
 
 .modal-content {
   background: white;
   padding: 20px;
   border-radius: 12px;
-  max-width: 400px;
   width: 100%;
   position: relative;
-  text-align: center;
   animation: scaleUp 0.3s ease;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  gap: 16px;
+  max-width: 720px;
+  margin-inline: 16px;
+}
+#modalImage {
+  border-radius: 16px;
+}
+@media (max-width: 640px) {
+  .modal-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #modalImage {
+    margin: 32px auto 0 auto;
+  }
+}
+.modal-content > img {
+  width: 320px;
+  height: 100%;
 }
 
 .modal-close {
@@ -599,6 +693,12 @@ form > button {
   right: 16px;
   font-size: 24px;
   cursor: pointer;
+}
+.modal-content-info {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 @keyframes fadeIn {

@@ -62,21 +62,33 @@ function loadProductsByCategory(category) {
         image: "./assets/images/category.jpg",
         name: "MULTI GYM 1 SISI",
         price: "Rp 8.500.000",
+        berat: "6kg",
+
+        description: "Alat gym multifungsi untuk latihan full body",
       },
       {
         image: "./assets/images/category.jpg",
         name: "MULTI GYM 2 SISI",
         price: "Rp 16.900.000",
+        berat: "6kg",
+
+        description: "Latihan intens dua sisi untuk kekuatan optimal",
       },
       {
         image: "./assets/images/category.jpg",
         name: "SUPERLATIVE SUPER RACK",
         price: "Rp 15.900.000",
+        berat: "6kg",
+
+        description: "Rak premium untuk latihan angkat beban berat",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Power Rack",
         price: "Rp 12.000.000",
+        berat: "6kg",
+
+        description: "Power rack kokoh untuk latihan beban maksimal",
       },
     ],
     CARDIO: [
@@ -84,21 +96,33 @@ function loadProductsByCategory(category) {
         image: "./assets/images/category.jpg",
         name: "Treadmill",
         price: "Rp 25.000.000",
+        berat: "6kg",
+
+        description: "Tingkatkan kardio dengan treadmill berkualitas",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Exercise Bike",
         price: "Rp 15.000.000",
+        berat: "6kg",
+
+        description: "Sepeda statis untuk latihan kardio harian",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Elliptical",
         price: "Rp 18.000.000",
+        berat: "6kg",
+
+        description: "Latihan low impact untuk semua kalangan",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Rowing Machine",
         price: "Rp 20.000.000",
+        berat: "6kg",
+
+        description: "Latihan seluruh tubuh dengan gerakan mendayung",
       },
     ],
     PACKAGES: [
@@ -106,16 +130,25 @@ function loadProductsByCategory(category) {
         image: "./assets/images/category.jpg",
         name: "Home Gym Package",
         price: "Rp 30.000.000",
+        berat: "6kg",
+
+        description: "Paket lengkap gym di rumah untuk kebugaran",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Commercial Gym Package",
         price: "Rp 150.000.000",
+        berat: "6kg",
+
+        description: `Solusi gym komersial lengkap dan terpercaya`,
       },
       {
         image: "./assets/images/category.jpg",
         name: "Hotel Gym Package",
         price: "Rp 100.000.000",
+        berat: "6kg",
+
+        description: "Paket gym elegan untuk fasilitas hotel modern",
       },
     ],
     "FREE WEIGHT": [
@@ -123,21 +156,33 @@ function loadProductsByCategory(category) {
         image: "./assets/images/category.jpg",
         name: "Dumbbells Set",
         price: "Rp 5.000.000",
+        berat: "6kg",
+
+        description: "Set dumbbell untuk latihan kekuatan otot",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Barbells",
         price: "Rp 3.500.000",
+        berat: "6kg",
+
+        description: "Barbell kuat untuk latihan angkat beban",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Kettlebells",
         price: "Rp 2.000.000",
+        berat: "6kg",
+
+        description: "Kettlebell multifungsi untuk berbagai latihan",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Weight Plates",
         price: "Rp 8.000.000",
+        berat: "6kg",
+
+        description: "Piring beban standar untuk berbagai kebutuhan",
       },
     ],
     "FLOORING & STORAGE": [
@@ -145,16 +190,25 @@ function loadProductsByCategory(category) {
         image: "./assets/images/category.jpg",
         name: "Rubber Flooring",
         price: "Rp 500.000/m²",
+        berat: "6kg",
+
+        description: "Lantai karet tahan lama dan aman untuk gym",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Dumbbell Rack",
         price: "Rp 3.000.000",
+        berat: "6kg",
+
+        description: "Rak dumbbell kuat untuk penyimpanan rapi",
       },
       {
         image: "./assets/images/category.jpg",
         name: "Weight Plate Storage",
         price: "Rp 2.500.000",
+        berat: "6kg",
+
+        description: "Tempat penyimpanan piring beban praktis",
       },
     ],
   };
@@ -189,10 +243,14 @@ function showModal(product) {
   const modalImage = document.getElementById("modalImage");
   const modalName = document.getElementById("modalName");
   const modalPrice = document.getElementById("modalPrice");
+  const modalDescription = document.getElementById("modalDescription");
+  const modalBerat = document.getElementById("modalBerat");
 
   modalImage.src = product.image;
   modalName.textContent = product.name;
   modalPrice.textContent = product.price;
+  modalDescription.textContent = product.description;
+  modalBerat.textContent = product.berat;
 
   modal.style.display = "flex";
 
