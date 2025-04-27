@@ -609,14 +609,18 @@ form > button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border-radius: 8 px; /* Optional: Apply border-radius to the container as well */
+  overflow: hidden; /* Ensures the image respects the border-radius */
 }
+
 .product-card > img {
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4/5;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   height: auto;
-  border-radius: 8px;
+  border-radius: 8%; /* Make the image round */
 }
+
 .product-info {
   display: flex;
   flex-direction: column;

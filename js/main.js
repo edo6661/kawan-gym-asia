@@ -93,10 +93,10 @@ function loadProductsByCategory(category) {
     ],
     CARDIO: [
       {
-        image: "./assets/images/category.jpg",
-        name: "Treadmill",
-        price: "Rp 25.000.000",
-        berat: "6kg",
+        image: "./assets/images/product/cardio/HURRICANE_F6_ARTIS_SPIN_BIKE.webp",
+        name: "HURRICANE F6 ARTIS SPIN BIKE",
+        price: "Rp 32.000.000",
+        berat: "68kg",
 
         description: "Tingkatkan kardio dengan treadmill berkualitas",
       },
