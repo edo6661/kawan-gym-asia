@@ -59,157 +59,73 @@ function loadProductsByCategory(category) {
   const productData = {
     STRENGTH: [
       {
-        image: "./assets/images/category.jpg",
-        name: "MULTI GYM 1 SISI",
-        price: "Rp 8.500.000",
-        berat: "6kg",
-
-        description: "Alat gym multifungsi untuk latihan full body",
+        image: "./assets/images/product/strength/hurricane/HURRICANE-HS01-SEATED-CHEST-PRESS.svg",
+        name: "HURRICANE HS01 SEATED CHEST PRESS",
+        price: "",
+        berat: "Berat : 68kg / 149lb",
+        dimensi: "Dimensi: 1360(L)*1260(W)*1650mm(H)",
       },
       {
-        image: "./assets/images/category.jpg",
-        name: "MULTI GYM 2 SISI",
-        price: "Rp 16.900.000",
-        berat: "6kg",
-
-        description: "Latihan intens dua sisi untuk kekuatan optimal",
+        image: "./assets/images/product/strength/hurricane/HURRICANE-HS02-SEATED-ROW.svg",
+        name: "HURRICANE HS02 SEATED ROW",
+        price: "",
+        berat: "Berat : 86kg / 189lb",
+        dimensi: "Dimensi: 1450(L)*1010(W)*1650mm(H)",
       },
       {
-        image: "./assets/images/category.jpg",
-        name: "SUPERLATIVE SUPER RACK",
-        price: "Rp 15.900.000",
-        berat: "6kg",
-
-        description: "Rak premium untuk latihan angkat beban berat",
+        image: "./assets/images/product/strength/hurricane/HURRICANE-HS03-SHOULDER-PRESS.svg",
+        name: "HURRICANE HS03 SHOULDER PRESS",
+        price: "",
+        berat: "Berat : 86kg / 189lb",
+        dimensi: "Dimensi: 1600(L)*1430(W)*1650mm(H)",
       },
       {
-        image: "./assets/images/category.jpg",
-        name: "Power Rack",
-        price: "Rp 12.000.000",
-        berat: "6kg",
-
-        description: "Power rack kokoh untuk latihan beban maksimal",
-      },
+        image: "./assets/images/product/strength/hurricane/HURRICANE-HS06-SEATED-LEG-CURL.svg",
+        name: "HURRICANE HS06 SEATED LEG CURL",
+        price: "",
+        berat: "Berat : 104kg / 228lb",
+        dimensi: "Dimensi: 1315(L)*970(W)*1650mm(H)",
+      },  
     ],
     CARDIO: [
       {
-        image: "./assets/images/product/cardio/HURRICANE_F6_ARTIS_SPIN_BIKE.webp",
+        image: "./assets/images/product/cardio/hurricane/HURRICANE-F6-ARTIS-RECUMBENT-BIKE.svg",
+        name: "HURRICANE F6 ARTIS RECUMBENT BIKE",
+        price: "",
+        berat: "Berat : 72kg / 159lb",
+        dimensi: "Dimensi: 1770(L)*750(W)*1450(H)",
+      },
+      {
+        image: "./assets/images/product/cardio/hurricane/HURRICANE-F6-ARTIS-SPIN-BIKE.svg",
         name: "HURRICANE F6 ARTIS SPIN BIKE",
-        price: "Rp 32.000.000",
-        berat: "68kg",
-
-        description: "Tingkatkan kardio dengan treadmill berkualitas",
+        price: "",
+        berat: "Berat : 68kg / 149lb",
+        dimensi: "Dimensi: 1200(L)*580(W)*1550(H)",
       },
       {
-        image: "./assets/images/category.jpg",
-        name: "Exercise Bike",
-        price: "Rp 15.000.000",
-        berat: "6kg",
-
-        description: "Sepeda statis untuk latihan kardio harian",
+        image: "./assets/images/product/cardio/hurricane/HURRICANE-F6-ARTIS-STAIR-CLIMBER.svg",
+        name: "HURRICANE F6 ARTIS STAIR CLIMBER",
+        price: "",
+        berat: "Berat : 108kg / 238lb",
+        dimensi: "Dimensi: 910(L)*1320(W)*1800(H)", 
       },
       {
-        image: "./assets/images/category.jpg",
-        name: "Elliptical",
-        price: "Rp 18.000.000",
-        berat: "6kg",
-
-        description: "Latihan low impact untuk semua kalangan",
+        image: "./assets/images/product/cardio/hurricane/HURRICANE-F6-ARTIS-TREADMILL.svg",
+        name: "HURRICANE F6 ARTIS TREADMILL",
+        price: "",
+        berat: "Berat : 108kg / 238lb",
+        dimensi: "Dimensi: 2200(L)*850(W)*1510(H)", 
       },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Rowing Machine",
-        price: "Rp 20.000.000",
-        berat: "6kg",
-
-        description: "Latihan seluruh tubuh dengan gerakan mendayung",
-      },
+      
     ],
     PACKAGES: [
-      {
-        image: "./assets/images/category.jpg",
-        name: "Home Gym Package",
-        price: "Rp 30.000.000",
-        berat: "6kg",
-
-        description: "Paket lengkap gym di rumah untuk kebugaran",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Commercial Gym Package",
-        price: "Rp 150.000.000",
-        berat: "6kg",
-
-        description: `Solusi gym komersial lengkap dan terpercaya`,
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Hotel Gym Package",
-        price: "Rp 100.000.000",
-        berat: "6kg",
-
-        description: "Paket gym elegan untuk fasilitas hotel modern",
-      },
+      
     ],
     "FREE WEIGHT": [
-      {
-        image: "./assets/images/category.jpg",
-        name: "Dumbbells Set",
-        price: "Rp 5.000.000",
-        berat: "6kg",
-
-        description: "Set dumbbell untuk latihan kekuatan otot",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Barbells",
-        price: "Rp 3.500.000",
-        berat: "6kg",
-
-        description: "Barbell kuat untuk latihan angkat beban",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Kettlebells",
-        price: "Rp 2.000.000",
-        berat: "6kg",
-
-        description: "Kettlebell multifungsi untuk berbagai latihan",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Weight Plates",
-        price: "Rp 8.000.000",
-        berat: "6kg",
-
-        description: "Piring beban standar untuk berbagai kebutuhan",
-      },
+      
     ],
     "FLOORING & STORAGE": [
-      {
-        image: "./assets/images/category.jpg",
-        name: "Rubber Flooring",
-        price: "Rp 500.000/m²",
-        berat: "6kg",
-
-        description: "Lantai karet tahan lama dan aman untuk gym",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Dumbbell Rack",
-        price: "Rp 3.000.000",
-        berat: "6kg",
-
-        description: "Rak dumbbell kuat untuk penyimpanan rapi",
-      },
-      {
-        image: "./assets/images/category.jpg",
-        name: "Weight Plate Storage",
-        price: "Rp 2.500.000",
-        berat: "6kg",
-
-        description: "Tempat penyimpanan piring beban praktis",
-      },
+      
     ],
   };
 
@@ -243,13 +159,13 @@ function showModal(product) {
   const modalImage = document.getElementById("modalImage");
   const modalName = document.getElementById("modalName");
   const modalPrice = document.getElementById("modalPrice");
-  const modalDescription = document.getElementById("modalDescription");
+  const modalDimensi = document.getElementById("modalDimensi");
   const modalBerat = document.getElementById("modalBerat");
 
   modalImage.src = product.image;
   modalName.textContent = product.name;
   modalPrice.textContent = product.price;
-  modalDescription.textContent = product.description;
+  modalDimensi.textContent = product.dimensi;
   modalBerat.textContent = product.berat;
 
   modal.style.display = "flex";
